@@ -29,6 +29,6 @@ COPY --from=builder /app/bootstrap.js ./
 COPY --from=builder /app/src/config ./src/config
 COPY --from=builder /app/tsconfig.json ./
 
-EXPOSE 7001
+EXPOSE 7006
 
 CMD ["npm", "run", "start"]
