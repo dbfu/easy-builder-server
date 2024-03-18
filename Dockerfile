@@ -11,7 +11,7 @@ COPY . .
 
 RUN pnpm run build
 
-FROM keymetrics/pm2:16-jessie
+FROM keymetrics/pm2:18-jessie
 
 WORKDIR /app
 
