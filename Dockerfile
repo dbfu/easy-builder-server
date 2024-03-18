@@ -27,6 +27,7 @@ RUN pnpm install --prod
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/bootstrap.js ./
 COPY --from=builder /app/src/config ./src/config
+COPY --from=builder /app/src/service/schema.ts ./src/service/schema.ts
 COPY --from=builder /app/tsconfig.json ./
 
 EXPOSE 7006
